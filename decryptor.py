@@ -13,7 +13,10 @@ def _initializer() -> None:
     verbosity_group.add_argument('-v', '--verbose', action='store_true', help="A flag to toggle verbose mode")
     global args
     args = parser.parse_args()
-_initializer()
+
+
+if __name__ == '__main__':
+    _initializer()
 
 
 import clr
