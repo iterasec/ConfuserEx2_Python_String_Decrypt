@@ -1,17 +1,17 @@
 ## About the project
-The project was developed to automate the string decryption process in a .NET binary obfuscated with [ConfuserEx 2][https://mkaring.github.io/ConfuserEx/]. A full deobfuscation guide that includes a context in which the script can be used can be found here: 
+The project was developed to automate the string decryption process in a .NET binary obfuscated with [ConfuserEx 2](https://mkaring.github.io/ConfuserEx/). A full deobfuscation guide that includes a context in which the script can be used can be found here: 
 ```
 https://
 ```
 ## Caution
 The script decrypts string constants by utilizing .NET Reflection which means that ConfuserEx 2 internal functions are used with discovered encrypted values to restore the original strings. Be sure to execute the script in a safe isolated environment in case an obfuscated binary sample contains modified malicious code inside the internal decryption functions that will be executed automatically upon the script invocation.
 ## Prerequisites
-* [python3][https://www.python.org/]
-* [pythonnet][https://github.com/pythonnet/pythonnet] python library
+* [python3](https://www.python.org/)
+* [pythonnet](https://github.com/pythonnet/pythonnet) python library
     ```
     pip install pythonnet
     ```
-* [dnlib][https://github.com/0xd4d/dnlib]
+* [dnlib](https://github.com/0xd4d/dnlib)
     ```
     the script tested with a dnlib library compiled from source with .NET Framework 4.5 
     but should work as expected with other versions as well
