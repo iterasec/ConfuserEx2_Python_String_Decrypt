@@ -1,5 +1,5 @@
 ## About the project
-The project was developed to automate the string decryption process in a .NET binary obfuscated with [ConfuserEx 2](https://mkaring.github.io/ConfuserEx/). The primary motivation behind creating the alternative string decryption tool was to use a custom user-chosen Powershell version which can support more modern .NET versions, considering limitations of the default Windows 10 default Powershell.
+The project was developed to automate the string decryption process in a .NET binary obfuscated with [ConfuserEx 2](https://mkaring.github.io/ConfuserEx/). The primary motivation behind creating the alternative string decryption tool was to use a custom user-chosen Powershell version which can support more modern .NET versions, considering limitations of the default Windows 10 Powershell.
 
 A full deobfuscation guide that includes a context in which the script can be used can be found here: 
 
