@@ -10,7 +10,7 @@ def _initializer() -> None:
     parser.add_argument('-s', '--powershellpath', type=str, required=False, help='Optional powershell path argument. Used instead of dnlib for reflection')
     parser.add_argument('-p', '--use-powershell', action='store_true', help='A flag to toggle usage of powershell instead of dnlib for reflection')
     verbosity_group = parser.add_mutually_exclusive_group(required=False)
-    verbosity_group.add_argument('-q', '--quite', action='store_true', help='A flag to toggle quite mode')
+    verbosity_group.add_argument('-q', '--quiet', action='store_true', help='A flag to toggle quiet mode')
     verbosity_group.add_argument('-v', '--verbose', action='store_true', help='A flag to toggle verbose mode')
     global args
     args = parser.parse_args()
